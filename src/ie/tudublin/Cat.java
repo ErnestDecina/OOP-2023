@@ -4,7 +4,9 @@ public class Cat {
     // Fields
     String name;
 
-    public void setName(String name) {
+    private int numLives = 9;
+
+    public Cat (String name) {
         this.name = name;
     }
 
@@ -12,7 +14,15 @@ public class Cat {
         return this.name;
     }
 
+    public int getNumLives() {
+        return this.numLives;
+    }
+
     public void speak() {
         System.out.println("Meow");
+    }
+
+    public void kill () {
+        numLives = numLives - 1;
     }
 }
