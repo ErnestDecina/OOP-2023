@@ -116,7 +116,7 @@ public class BugZap extends PApplet {
 	public void draw() {
 		background(0);
 		fill(255);
-		text("Score: " + score, 50, 100);
+		// text("Score: " + score, 50, 100);
 		if (gameMode == 0)
 		{
 			fill(255);
