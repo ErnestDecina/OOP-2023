@@ -28,11 +28,9 @@ public class Main
 		Dog penny = new Dog();
 		penny.setName("Penny");
 		penny.speak();
-<<<<<<< HEAD
-=======
 
 		loops();
->>>>>>> 9b270520c94c402256d33f80b70e45d6ca86532d
+
 	}
 	
 }
