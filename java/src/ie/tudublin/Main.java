@@ -1,5 +1,7 @@
 package ie.tudublin;
 
+import java.io.FileNotFoundException;
+
 public class Main
 {
 
@@ -27,7 +29,13 @@ public class Main
         processing.core.PApplet.runSketch( a, new StarMap());
     }
 	
-	public static void main(String[] args)
+	public static void Audio1()
+	{
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Audio1());
+    }
+
+	public static void main(String[] args) throws FileNotFoundException
 	{
 		System.out.println("Hello world");
 		
@@ -35,7 +43,8 @@ public class Main
 		penny.setName("Penny");
 		penny.speak();
 
-		bugZap();
+		Audio1();
+		// starMap();
 	}
 	
 }
