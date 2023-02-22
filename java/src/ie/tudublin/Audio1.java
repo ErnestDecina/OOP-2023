@@ -36,6 +36,7 @@ public class Audio1 extends PApplet
 	
 	public void draw()
 	{	
+		// lol
 		strokeWeight(2);
 		stroke(c, 255, 255);
 		c = (c + 1f) % 255;
