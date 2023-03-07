@@ -4,6 +4,7 @@ import processing.core.PApplet;
 
 public class LifeBoard {
     boolean[][] board;
+    boolean[][] nextBoard;
 
     private int size;
     PApplet p;
@@ -12,11 +13,13 @@ public class LifeBoard {
         this.size = size;
         this.p = p;
         board = new boolean[size][size];
+        nextBoard = new boolean[size][size];
         randomize();
     } // End 
 
     public void render() {
         drawBoard();
+        applyRules();
     } // End remder
 
     private void drawBoard() {
@@ -71,7 +74,35 @@ public class LifeBoard {
     } // End countCells
 
     private void applyRules() {
-        	
+        	for(int row = 0; row < size; row++) {
+                for(int col = 0; col < size; size++) {
+                    int count = countCells(row, col);
+
+                    if(board[row][col]) {
+                        if (count == 2 || count == 3) {
+                            nextBoard[row][col] = true;
+                        } // End if
+                        else {
+                            nextBoard[row][col] = false;
+                        }  // End else
+                    } // End if
+                    else
+                    {
+                        if (count == 3)
+                        {
+                            nextBoard[row][col] = true;
+                        }
+                        else
+                        {
+                            nextBoard[row][col] = false;
+                        }
+                    }
+
+                    boolean[][] temp = board;
+                    board = nextBoard;
+                    nextBoard = temp;
+                } // End for 
+            } // End for
     } // 
 } // End randomeize
 
