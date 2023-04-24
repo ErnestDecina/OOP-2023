@@ -1,0 +1,9 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "java/lib/GameControlPlus.jar",
+        "java/lib/gamecontrollerplus.jar",
+        "c:\\Users\\College\\Downloads\\GameControlPlus V1.2.2\\GameControlPlus\\library\\GameControlPlus.jar"
+    ]
+}
