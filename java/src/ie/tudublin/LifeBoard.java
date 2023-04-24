@@ -128,7 +128,6 @@ public class LifeBoard {
         }
     }
 
-
     public int getSize() {
         return size;
     }

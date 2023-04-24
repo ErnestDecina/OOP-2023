@@ -1,5 +1,7 @@
 package ie.tudublin;
 
+import com.ernestjohndecina.ProcessingBase;
+
 public class Main
 {
 
@@ -57,6 +59,11 @@ public class Main
         processing.core.PApplet.runSketch( a, new YASC());
     }
 	
+	public static void processingControllerSupport() {
+		String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new ProcessingBase());
+	}
+
 	public static void main(String[] args)
 	{
 		System.out.println("Hello world");
