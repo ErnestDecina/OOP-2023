@@ -30,20 +30,20 @@ public class HealthPowerup extends GameObject implements PowerUp{
         rot += 0.01f;
         pos.add(PVector.mult(forward, speed));    
 
-        if (pos.x < 0)
+        if (pos.x < -80)
         {
             pos.x = p.width;
         }
-        if (pos.y < 0)
+        if (pos.y < -80)
         {
             pos.y = p.height;
         }
-        if (pos.x > p.width)
+        if (pos.x > p.width + 80)
         {
             pos.x = 0;
         }
 
-        if (pos.y > p.height)
+        if (pos.y > p.height + 80)
         {
             pos.y = 0;
         }
